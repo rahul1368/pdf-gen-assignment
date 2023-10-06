@@ -3,39 +3,40 @@ import makeStyles from '@mui/styles/makeStyles';
 
 export const useLineChartStyles = makeStyles((theme: Theme) => ({
     root: {},
+    printerIcon: {
+        marginRight: '8px',
+    },
     chartWrapper: {
         borderRadius: '12.759px 12.759px 0px 0px',
-        background: 'var(--chun-li-blue-100, #E8EEFB)',
-        padding: '4px',
+        background: 'var(--chun-li-blue-100, #F2F4F5)',
     },
     yAxisLabel: {
         width: '16px',
         transform: 'rotate(270deg)',
         position: 'relative',
-        left: '92px',
+        left: '94px',
         top: '24px',
         fontSize: '16px',
         color: '#1E1E1E',
         fontWeight: 500,
     },
-    hr: {
-        display: 'block',
-        height: '1px',
-        border: 0,
-        borderTop: '1px solid #1463FF',
-        margin: '1em 0',
-        padding: 0,
-    },
     heading: {
         '&.MuiTypography-body1': {
+            '& span': {
+                padding: '12px',
+            },
             color: 'var(--blue, #1463FF)',
+            display: 'flex',
             fontFamily: 'Poppins',
             fontSize: '16px',
             fontStyle: 'normal',
             fontWeight: 500,
             lineHeight: '10px', /* 111.111% */
-            margin: '7px, 12px !important',
-            padding: '7px, 12px !important',
+            width: '100%',
+            height: '36px',
+            borderRadius: '12.759px 12.759px 0px 0px',
+            background: '#E8EEFB',
+
         },
     },
     chart: {
@@ -55,20 +56,19 @@ export const useLineChartStyles = makeStyles((theme: Theme) => ({
     },
     generatePdf: {
         display: 'flex',
+        marginTop: '24px !important',
         justifyContent: 'center',
         width: '100%',
         '& a': {
-            backgroundColor: '#000',
+            width: '109px',
+            padding: '10px 4px',
+            borderRadius: '16px',
+            background: 'var(--main-void-600, #090E24)',
+            /* button-shadow */
+            boxShadow: '0px 10px 48px 0px rgba(0, 0, 0, 0.06)',
             color: '#fff',
             textDecoration: 'none',
-        },
-        '& button': {
-            marginTop: '24px',
-            backgroundColor: '#000',
-            color: '#fff',
-            width: '109px',
-            height: '56px',
-            '&:focus': {
+            '&:visited': {
                 backgroundColor: '#000',
                 color: '#fff',
             },
@@ -76,6 +76,29 @@ export const useLineChartStyles = makeStyles((theme: Theme) => ({
                 backgroundColor: '#000',
                 color: '#fff',
             },
+            '&:active': {
+                backgroundColor: '#000',
+                color: '#fff',
+            },
+        },
+    },
+    printBtn: {
+        '& span': {
+            color: 'var(--white, #FFF)',
+            fontFamily: 'Beausite Classic',
+            fontSize: '14px',
+            fontWeight: 600,
+            lineHeight: '16px', /* 114.286% */
+        },
+        marginTop: '24px', 
+        color: '#fff',
+        '&:focus': {
+            backgroundColor: '#000',
+            color: '#fff',
+        },
+        '&:hover': {
+            backgroundColor: '#000',
+            color: '#fff',
         },
     },
 }));

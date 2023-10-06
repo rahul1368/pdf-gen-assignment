@@ -23,15 +23,9 @@ const getChartDataState = (dataV: any[]) => {
     labels: dataV?.map((data : IBurglaryCrimesState) => data.year) || [], 
     datasets: [
       {
-        label: "Burglary Crimes",
+        label: "",
         data: dataV?.map((data : IBurglaryCrimesState) => data.burglaryCrimesCount) || [],
-        backgroundColor: [
-            "#1463FF",
-            "#1463FF",
-            "#1463FF",
-            "#1463FF",
-            "#1463FF",
-        ],
+        backgroundColor: dataV?.map((o) => ("#1463FF")),
         borderColor: "#1463FF",
         borderWidth: 2,
       }
@@ -46,20 +40,14 @@ function HomePage() {
     const [chartData, setChartData] = useState({
         labels: burglaryCrimesData?.map((data) => data.year) || [], 
         datasets: [
-        {
-            label: "Burglary Crimes",
-            data: burglaryCrimesData?.map((data) => data.burglaryCrimesCount) || [],
-            backgroundColor: [
-                "#1463FF",
-                "#1463FF",
-                "#1463FF",
-                "#1463FF",
-                "#1463FF",
-            ],
-            borderColor: "#1463FF",
-            borderWidth: 2,
-        }
-        ]
+            {
+                label: "",
+                data: burglaryCrimesData?.map((data) => data.burglaryCrimesCount) || [],
+                backgroundColor: [],
+                borderColor: "#1463FF",
+                borderWidth: 2,
+            }
+        ],
     });
 
     useEffect(() => {

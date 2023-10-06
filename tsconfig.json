@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.js", "src/assets/*", "src/**/*.jsx", "src/**/*.svg", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

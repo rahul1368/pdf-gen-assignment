@@ -159,6 +159,7 @@ const StepsSection = styled.div`
     width: 1920px;
     height: 845px;
     background: transparent url(${imgStepsSection}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
     > h2 {
         width: 373px;
@@ -174,6 +175,7 @@ const CRightImage = styled.div`
     width: 500px;
     height: 406px;
     background: transparent url(${imgCenterSectionRightIcon}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
     display: flex;
 `;
@@ -182,6 +184,7 @@ const CLeftImage = styled.div`
     width: 800px;
     height: 216px;
     background: transparent url(${imgCenterSectionLeftIcon}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
     display: flex;
 `;
@@ -189,6 +192,7 @@ const CenterSection = styled.div`
     width: 1920px;
     height: 362px;
     background: transparent url(${imgCenterSectionBackground}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
     display: flex;
 `;
@@ -196,6 +200,7 @@ const FormHeader = styled.div`
     width: 770px;
     height: 196px;
     background: transparent url(${imgHeaderFormSection}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     mix-blend-mode: normal;
     opacity: 0.04;
 `;
@@ -203,6 +208,7 @@ const FormSection = styled.form`
     width: 785px;
     height: 1005px;
     background: transparent url(${imgBgFormSection}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 20px;
     opacity: 1;
@@ -212,6 +218,7 @@ const LeftSection = styled.div`
     width: 773px;
     height: 739px;
     background: transparent url(${imgMainSectionLeftIcon}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
 `;
 const MainSection = styled.div`
@@ -230,8 +237,9 @@ const NavbarItemsList = styled.ul`
 const LeftIcon = styled.div`
     width: 96px;
     height: 55px;
-    background-size: contain;
     background: transparent url(${imgLeftIcon}) 0% 0% no-repeat padding-box;
+    background-size: contain;
+    background-size: contain;
     opacity: 1;
 `;
 const SecondaryHeader = styled.div`
@@ -239,6 +247,7 @@ const SecondaryHeader = styled.div`
     width: 1920px;
     height: 121px;
     background: transparent url(${imgSecondaryHeader}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
 `;
 const ThirdLineText = styled.div`
@@ -278,6 +287,7 @@ const NavbarWrapper = styled.div`
     width: 1932px;
     height: 674px;
     background: transparent url(${imgNavbarBackground}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     opacity: 1;
 `;
 const WrapperDiv = styled.div`
@@ -304,6 +314,7 @@ const CarrerWithUs = styled.div`
     width: 171px;
     height: 38px;
     background: transparent url(${imgCarrerWithUs}) 0% 0% no-repeat padding-box;
+    background-size: contain;
     border: 0.5px solid #FFFFFF;
     opacity: 1;
     display: flex;
@@ -334,7 +345,6 @@ const SocialIcon = styled.div`
   height: 16px;
   margin-right: 20px;
   background-size: contain;
-  background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
 

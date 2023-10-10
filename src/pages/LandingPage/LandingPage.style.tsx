@@ -1,6 +1,6 @@
 import { Theme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import img from "../../assets/img/Rectangle 885.png";
+import img from "../../assets/img/secondary-header.png";
 import groupImg from "../../assets/img/Group 20325.png";
 
 export const useLandingPageStyles = makeStyles((theme: Theme) => ({

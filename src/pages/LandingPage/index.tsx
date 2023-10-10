@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { useLandingPageStyles } from './LandingPage.style';
-
+import { Desktop } from '../../components/Desktop/Desktop';
 export const LandingPage = () => {
     const classes = useLandingPageStyles();
     return(
         <div>
+            <Desktop />
             <nav>
                 <div className={classes.wrapperDiv}>
                     <div className={classes.navHeaderDiv}>

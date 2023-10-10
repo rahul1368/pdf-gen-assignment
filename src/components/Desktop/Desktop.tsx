@@ -156,7 +156,7 @@ export function Desktop(){
 }
 
 const StepsSection = styled.div`
-    width: 1920px;
+    width: 100%;
     height: 845px;
     background: transparent url(${imgStepsSection}) 0% 0% no-repeat padding-box;
     background-size: contain;
@@ -189,7 +189,7 @@ const CLeftImage = styled.div`
     display: flex;
 `;
 const CenterSection = styled.div`
-    width: 1920px;
+    width: 100%;
     height: 362px;
     background: transparent url(${imgCenterSectionBackground}) 0% 0% no-repeat padding-box;
     background-size: contain;
@@ -244,11 +244,13 @@ const LeftIcon = styled.div`
 `;
 const SecondaryHeader = styled.div`
     display: flex;
-    width: 1920px;
+    width: auto;
+    padding: 0 32px;
     height: 121px;
     background: transparent url(${imgSecondaryHeader}) 0% 0% no-repeat padding-box;
     background-size: contain;
     opacity: 1;
+    justify-content: space-between;
 `;
 const ThirdLineText = styled.div`
     color: #FFF;
@@ -284,14 +286,12 @@ const NavbarContent = styled.div`
     margin-left: 181px;
 `;
 const NavbarWrapper = styled.div`
-    width: 1932px;
     height: 674px;
     background: transparent url(${imgNavbarBackground}) 0% 0% no-repeat padding-box;
-    background-size: contain;
+    background-size: cover;
     opacity: 1;
 `;
 const WrapperDiv = styled.div`
-    width: 90%;
     background-color: pink !important;
     display: flex;
     align-items: center;
@@ -299,8 +299,6 @@ const WrapperDiv = styled.div`
 const RightSection = styled.div`
     background-color: yellow !important;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
 `;
 const CarrerWithUsIcon = styled.img`
     width: 23px;
@@ -357,13 +355,15 @@ const SocialIcon = styled.div`
 const SocialIconsSection = styled.div`
     display: flex;
     align-items: center;
-    margin-left: 32px;
 `;
 const StyledNavBar = styled.div`
-    width: 1920px;
+    padding: 0 32px;
+    margin: 0 auto;
+    width: auto;
     height: 73px;
     background: #56006C 0% 0% no-repeat padding-box;
     opacity: 1;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 `;

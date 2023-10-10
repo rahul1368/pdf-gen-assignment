@@ -1,11 +1,16 @@
 import * as React from 'react';
 import { useLandingPageStyles } from './LandingPage.style';
+import BannerSection from '../../components/Sections/BannerSection';
+import StatsSection from '../../components/Sections/StatsSection';
+import GroupSection from '../../components/Sections/GroupSection';
+import SupportSection from '../../components/Sections/SupportSection';
+import BottomSection from '../../components/Sections/BottomSection';
 
 export const LandingPage = () => {
     const classes = useLandingPageStyles();
     return(
         <div>
-            <nav>
+            {/* <nav>
                 <div className={classes.wrapperDiv}>
                     <div className={classes.navHeaderDiv}>
                         ghfgf
@@ -19,7 +24,12 @@ export const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav> */}
+            <BannerSection />
+            <GroupSection />
+            <SupportSection />
+            <StatsSection />
+            <BottomSection />
         </div>
     );
 }
